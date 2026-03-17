@@ -11,6 +11,9 @@ void printList(ListNode* node, bool b_debug) {
     if (b_debug) {
         std::cout << "[Debug] l2: ";
     }
+    else {
+        std::cout << "Final result of both merged LLSs: ";
+    }
     while (node != nullptr) {
         std::cout << node->val;
         if (node->next == nullptr) {
