@@ -45,6 +45,7 @@ g++ -o merge_slls merge_slls.cpp
 * **List 1 (Unsorted):** `30 -> 25 -> 8 -> 40`
 * **List 2 (Sorted):** `10 -> 11 -> 12 -> 13`
 * **Final Merged Output:** `8 -> 10 -> 11 -> 12 -> 13 -> 25 -> 30 -> 40`
+<img width="792" height="363" alt="image" src="https://github.com/user-attachments/assets/ebe20261-8b7a-4499-9676-f799f952ff43" />
 
 ---
 
@@ -53,3 +54,23 @@ g++ -o merge_slls merge_slls.cpp
 * **Date:** March 17, 2026
 
 ---
+MIT License
+Copyright (c) 2026 LiMe
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
