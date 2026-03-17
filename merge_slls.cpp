@@ -33,6 +33,10 @@ void printList(ListNode* node, bool b_debug) {
 *  After each node has been successfully inserted into l2, the current l2 SLL will be printed seperately. 
 *  Precondition is l2 needs to be sorted ascendingly in the first place.
 *  l1 does not need to be sorted at all.
+*  @performance:
+*  - Time (Best Case):  O(N)             Occurs if all l1 elements are smaller than the first element of l2.
+*  - Time (Worst Case): O(N *(M + N))    Occurs when l1 elements are inserted at the very end of l2.
+*  - Space:             O(1)             No extra memory is allocated for the merged structure.
 */
 ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
     ListNode* current_node_l1 = l1;                             // start with the first node of l1
@@ -71,13 +75,13 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
 
 int main() {
     // Example usage:
-    // List 1: 1 -> 3 -> 5
+    // List 1: 30 -> 25 -> 8 -> 40
     ListNode* l1 = new ListNode(30);
     l1->next = new ListNode(25);
     l1->next->next = new ListNode(8);
     l1->next->next->next = new ListNode(40);
 
-    // List 2: 2 -> 4 -> 6
+    // List 2: 10 -> 11 -> 12 -> 13
     ListNode* l2 = new ListNode(10);
     l2->next = new ListNode(11);
     l2->next->next = new ListNode(12);
@@ -85,7 +89,7 @@ int main() {
 
     ListNode* mergedList = mergeTwoLists(l1, l2);
 
-    // Expected outcome : 1 -> 2 -> 3 -> 4 -> 5 -> 6
+    // Expected outcome : 8 -> 10 -> 11 -> 12 -> 13 -> 25 -> 30 -> 40
     printList(mergedList, false);
 
     return 0;
