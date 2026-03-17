@@ -1,4 +1,4 @@
-# Sorted Linked List In-Place Merger
+# Sorted Linked List Merger
 
 A C++ implementation of a Singly Linked List (SLL) merging algorithm. This project demonstrates a specific logic where nodes from a source list (`l1`) are iteratively inserted into a pre-sorted target list (`l2`).
 
